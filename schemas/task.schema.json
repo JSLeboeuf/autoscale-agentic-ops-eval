@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AutoScale Agentic Ops Eval Task",
+  "type": "object",
+  "required": [
+    "id",
+    "domain",
+    "language",
+    "task_type",
+    "input",
+    "sources",
+    "expected_behavior",
+    "safety_constraints",
+    "scoring_focus"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "enum": ["fr", "en", "fr-en"]
+    },
+    "task_type": {
+      "type": "string"
+    },
+    "input": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "text"],
+        "properties": {
+          "id": {"type": "string"},
+          "text": {"type": "string"}
+        }
+      }
+    },
+    "expected_behavior": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "safety_constraints": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "scoring_focus": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}
