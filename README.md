@@ -40,6 +40,7 @@ Synthetic SMB operations with emphasis on:
 
 ## Files
 
+- `assets/autoscale-partner-page-cover-2026-06-29.png`: public cover screenshot for partner/showcase submissions.
 - `dataset/synthetic_tasks.jsonl`: 30 synthetic tasks.
 - `schemas/task.schema.json`: expected task shape.
 - `rubric.md`: scoring rubric.
