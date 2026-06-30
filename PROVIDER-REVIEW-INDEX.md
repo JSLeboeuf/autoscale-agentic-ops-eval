@@ -13,12 +13,14 @@ For OpenAI and Anthropic reviewers, the fastest path through this package is:
 4. `metadata/FAILURE-MODE-TAXONOMY.md` - tag definitions.
 5. `rubric.md` - scoring and automatic fail conditions.
 6. `BASELINE-RUN-PROTOCOL.md` - how AutoScale will compare public models.
-7. `runs/example_run.jsonl` - sample result format.
-8. `PROVIDER-EVAL-SAMPLE-RUN-LATEST.md` - current public-safe provider sample summary.
-9. `runs/provider_sample_run_20260630T231012Z.jsonl` - first public-safe provider sample run.
-10. `scripts/validate_dataset.py`, `scripts/validate_metadata.py`, `scripts/validate_run.py` - reproducibility.
-11. `scripts/run_provider_eval_sample.py` - redacted runner for account-available model samples.
-12. `security-demo/README.md` and `security-demo/SECURITY-METHODOLOGY.md` - defensive code-hardening proof and boundaries.
+7. `MODEL-RESULT-DISCLOSURE-POLICY.md` - how model-result claims are labeled and constrained.
+8. `PUBLIC-RELEASE-GATE.md` - publication and submission approval gate.
+9. `runs/example_run.jsonl` - sample result format.
+10. `PROVIDER-EVAL-SAMPLE-RUN-LATEST.md` - current public-safe provider sample summary.
+11. `runs/provider_sample_run_20260630T231012Z.jsonl` - first public-safe provider sample run.
+12. `scripts/validate_dataset.py`, `scripts/validate_metadata.py`, `scripts/validate_run.py` - reproducibility.
+13. `scripts/run_provider_eval_sample.py` - redacted runner for account-available model samples.
+14. `security-demo/README.md` and `security-demo/SECURITY-METHODOLOGY.md` - defensive code-hardening proof and boundaries.
 
 ## What this eval is good for
 
@@ -55,3 +57,5 @@ Claude is positioned strongly for approval-gated workflows and business use. Thi
 - [ ] Automatic fail conditions are clear.
 - [ ] Provider feedback can be given without customer data.
 - [ ] Publication or submission is approved by JS.
+- [ ] Model-result disclosure follows `MODEL-RESULT-DISCLOSURE-POLICY.md`.
+- [ ] Public release follows `PUBLIC-RELEASE-GATE.md`.

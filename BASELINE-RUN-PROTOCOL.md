@@ -106,3 +106,8 @@ OK: 6 results validated; average=4.86; automatic_fails=0
 ## Manual approval gate
 
 Publishing baseline results or sending them to a provider requires explicit approval.
+
+Before publication or provider submission, also follow:
+
+- `MODEL-RESULT-DISCLOSURE-POLICY.md`
+- `PUBLIC-RELEASE-GATE.md`

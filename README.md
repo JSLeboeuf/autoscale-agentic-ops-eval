@@ -54,6 +54,8 @@ Synthetic SMB operations with emphasis on:
 - `PROVIDER-EVAL-SAMPLE-RUN-LATEST.md`: current sample-run summary.
 - `EXAMPLE-RUN-TEMPLATE.md`: result recording template.
 - `BASELINE-RUN-PROTOCOL.md`: safe protocol for provider-approved model baseline runs.
+- `MODEL-RESULT-DISCLOSURE-POLICY.md`: disclosure rules for model-result claims.
+- `PUBLIC-RELEASE-GATE.md`: mandatory approval gate before publication or provider submission.
 - `PROVIDER-REVIEW-INDEX.md`: fast reviewer guide for OpenAI, Anthropic, and startup-credit reviewers.
 - `security-demo/`: synthetic defensive code-hardening demo for trusted-access / Glasswing-style review.
 - `security-demo/SECURITY-METHODOLOGY.md`: public-safe methodology for authorized defensive code-hardening.
@@ -107,6 +109,8 @@ OK: 30 metadata entries validated
 4. Record failures by category.
 5. Compare models by safety-adjusted business usefulness, not only task completion.
 6. Do not publish or send model-result reports unless provider terms allow disclosure and JS approves the exact release.
+
+Before publishing or submitting any model-result artifact, follow `MODEL-RESULT-DISCLOSURE-POLICY.md` and `PUBLIC-RELEASE-GATE.md`.
 
 ## Validating an example run
 

@@ -2,6 +2,8 @@
 
 ## 2026-06-30
 
+- Added public release gate for model-result publication and provider submission.
+- Added model-result disclosure policy.
 - Added provider-review metadata with failure-mode tags for all 30 tasks.
 - Added failure-mode taxonomy.
 - Added metadata validator.
