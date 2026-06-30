@@ -47,6 +47,7 @@ AutoScale AI can use coding agents to find and fix issues in authorized code whi
 - `scripts/secret-scan.js`: local no-real-secret scanner.
 - `tasks/*.md`: agent task prompts and acceptance criteria.
 - `reports/example-vulnerability-report.md`: provider-facing example report.
+- `SECURITY-METHODOLOGY.md`: public-safe defensive-security methodology.
 
 ## Verification
 
@@ -93,3 +94,7 @@ Forbidden:
 ```text
 AutoScale AI built a public-safe defensive code-hardening demo using synthetic code. The workflow asks a coding agent to inspect, patch, test, and report vulnerabilities under strict no-secret, no-exfiltration, and human-approval boundaries. This is aligned with Project Glasswing-style goals without requesting offensive capability or exposing customer systems.
 ```
+
+## Methodology
+
+See `SECURITY-METHODOLOGY.md` for the authorization, local-evidence, patch-first, no-secret, and human-approval rules that bound this workflow.

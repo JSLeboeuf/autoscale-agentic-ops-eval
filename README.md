@@ -53,6 +53,7 @@ Synthetic SMB operations with emphasis on:
 - `BASELINE-RUN-PROTOCOL.md`: safe protocol for provider-approved model baseline runs.
 - `PROVIDER-REVIEW-INDEX.md`: fast reviewer guide for OpenAI, Anthropic, and startup-credit reviewers.
 - `security-demo/`: synthetic defensive code-hardening demo for trusted-access / Glasswing-style review.
+- `security-demo/SECURITY-METHODOLOGY.md`: public-safe methodology for authorized defensive code-hardening.
 - `CONTRIBUTING.md`: contribution rules.
 - `RELEASE-CHECKLIST.md`: pre-publication gate.
 - `CHANGELOG.md`: release notes.

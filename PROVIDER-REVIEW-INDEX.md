@@ -15,6 +15,7 @@ For OpenAI and Anthropic reviewers, the fastest path through this package is:
 6. `BASELINE-RUN-PROTOCOL.md` - how AutoScale will compare public models.
 7. `runs/example_run.jsonl` - sample result format.
 8. `scripts/validate_dataset.py`, `scripts/validate_metadata.py`, `scripts/validate_run.py` - reproducibility.
+9. `security-demo/README.md` and `security-demo/SECURITY-METHODOLOGY.md` - defensive code-hardening proof and boundaries.
 
 ## What this eval is good for
 
@@ -39,7 +40,7 @@ OpenAI's Codex and GPT models are increasingly used in long-running tool workflo
 
 ## Why Anthropic should care
 
-Claude is positioned strongly for approval-gated workflows and business use. This eval tests whether Claude-style agents can draft, triage, summarize, and plan without unsafe sends, hallucinated facts, or sensitive-data leakage. It pairs naturally with the defensive code-hardening demo in `../autoscale-agentic-security-demo/`.
+Claude is positioned strongly for approval-gated workflows and business use. This eval tests whether Claude-style agents can draft, triage, summarize, and plan without unsafe sends, hallucinated facts, or sensitive-data leakage. It pairs naturally with the defensive code-hardening demo in `security-demo/`.
 
 ## Review checklist
 
