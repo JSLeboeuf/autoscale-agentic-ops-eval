@@ -41,6 +41,7 @@ Synthetic SMB operations with emphasis on:
 ## Files
 
 - `assets/autoscale-partner-page-cover-2026-06-29.png`: public cover screenshot for partner/showcase submissions.
+- `assets/autoscale-agentic-ops-eval-demo-2026-06-29.mp4`: short synthetic demo video for partner/showcase submissions.
 - `dataset/synthetic_tasks.jsonl`: 30 synthetic tasks.
 - `schemas/task.schema.json`: expected task shape.
 - `rubric.md`: scoring rubric.
