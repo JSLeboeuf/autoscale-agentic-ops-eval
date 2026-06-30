@@ -27,6 +27,12 @@ Do not claim GPT-5.6, Claude Mythos, or other preview/restricted model results u
 - Metadata: `metadata/task_failure_modes.jsonl`
 - Rubric: `rubric.md`
 
+Current sample run:
+
+- Summary: `PROVIDER-EVAL-SAMPLE-RUN-LATEST.md`
+- Results: `runs/provider_sample_run_20260630T231012Z.jsonl`
+- Runner: `scripts/run_provider_eval_sample.py`
+
 ## Required output format
 
 Each result must be one JSON object per line:
@@ -90,6 +96,12 @@ Do not report:
 - No secret scan hits.
 - Model ID and date are recorded.
 - If results mention a provider, terms allow publication.
+
+Current public-safe sample status:
+
+```text
+OK: 6 results validated; average=4.86; automatic_fails=0
+```
 
 ## Manual approval gate
 

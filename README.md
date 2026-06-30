@@ -48,7 +48,10 @@ Synthetic SMB operations with emphasis on:
 - `scripts/validate_dataset.py`: local dataset validator.
 - `scripts/validate_metadata.py`: metadata validator.
 - `scripts/validate_run.py`: local model-run result validator.
+- `scripts/run_provider_eval_sample.py`: public-safe runner for account-available model sample runs.
 - `runs/example_run.jsonl`: synthetic example run.
+- `runs/provider_sample_run_20260630T231012Z.jsonl`: first public-safe sample run against `openai:gpt-5.3-codex` and `anthropic:claude-opus-4-8`.
+- `PROVIDER-EVAL-SAMPLE-RUN-LATEST.md`: current sample-run summary.
 - `EXAMPLE-RUN-TEMPLATE.md`: result recording template.
 - `BASELINE-RUN-PROTOCOL.md`: safe protocol for provider-approved model baseline runs.
 - `PROVIDER-REVIEW-INDEX.md`: fast reviewer guide for OpenAI, Anthropic, and startup-credit reviewers.
@@ -103,6 +106,7 @@ OK: 30 metadata entries validated
 3. Score using `rubric.md`.
 4. Record failures by category.
 5. Compare models by safety-adjusted business usefulness, not only task completion.
+6. Do not publish or send model-result reports unless provider terms allow disclosure and JS approves the exact release.
 
 ## Validating an example run
 
@@ -115,6 +119,20 @@ Expected result:
 ```text
 OK: 3 results validated; average=4.94; automatic_fails=0
 ```
+
+## Validating the current provider sample run
+
+```bash
+python3 scripts/validate_run.py dataset/synthetic_tasks.jsonl runs/provider_sample_run_20260630T231012Z.jsonl
+```
+
+Expected result:
+
+```text
+OK: 6 results validated; average=4.86; automatic_fails=0
+```
+
+This is a small public-safe sample, not an official OpenAI or Anthropic benchmark.
 
 ## Why this matters
 

@@ -14,8 +14,11 @@ For OpenAI and Anthropic reviewers, the fastest path through this package is:
 5. `rubric.md` - scoring and automatic fail conditions.
 6. `BASELINE-RUN-PROTOCOL.md` - how AutoScale will compare public models.
 7. `runs/example_run.jsonl` - sample result format.
-8. `scripts/validate_dataset.py`, `scripts/validate_metadata.py`, `scripts/validate_run.py` - reproducibility.
-9. `security-demo/README.md` and `security-demo/SECURITY-METHODOLOGY.md` - defensive code-hardening proof and boundaries.
+8. `PROVIDER-EVAL-SAMPLE-RUN-LATEST.md` - current public-safe provider sample summary.
+9. `runs/provider_sample_run_20260630T231012Z.jsonl` - first public-safe provider sample run.
+10. `scripts/validate_dataset.py`, `scripts/validate_metadata.py`, `scripts/validate_run.py` - reproducibility.
+11. `scripts/run_provider_eval_sample.py` - redacted runner for account-available model samples.
+12. `security-demo/README.md` and `security-demo/SECURITY-METHODOLOGY.md` - defensive code-hardening proof and boundaries.
 
 ## What this eval is good for
 
@@ -33,6 +36,7 @@ For OpenAI and Anthropic reviewers, the fastest path through this package is:
 - Not a customer-data corpus.
 - Not a claim of official OpenAI or Anthropic partnership.
 - Not a claim of access to restricted models.
+- Not an official benchmark result from OpenAI or Anthropic.
 
 ## Why OpenAI should care
 
@@ -47,6 +51,7 @@ Claude is positioned strongly for approval-gated workflows and business use. Thi
 - [ ] Dataset has 30 tasks and validates.
 - [ ] Metadata covers all 30 tasks and validates.
 - [ ] Example run validates.
+- [ ] Provider sample run validates.
 - [ ] Automatic fail conditions are clear.
 - [ ] Provider feedback can be given without customer data.
 - [ ] Publication or submission is approved by JS.
