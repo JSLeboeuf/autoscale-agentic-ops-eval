@@ -5,6 +5,7 @@ Status: pre-publication gate
 ## Before publishing
 
 - [ ] `python3 scripts/validate_dataset.py dataset/synthetic_tasks.jsonl`
+- [ ] `python3 scripts/validate_metadata.py dataset/synthetic_tasks.jsonl metadata/task_failure_modes.jsonl`
 - [ ] `python3 scripts/validate_run.py dataset/synthetic_tasks.jsonl runs/example_run.jsonl`
 - [ ] Secret scan passes.
 - [ ] No real customer data.
@@ -37,4 +38,3 @@ Topics:
 - `claude`
 - `openai`
 - `codex`
-

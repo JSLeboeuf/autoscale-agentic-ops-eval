@@ -1,0 +1,13 @@
+{
+  "name": "autoscale-agentic-security-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Synthetic defensive code-hardening demo for safe coding agents.",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "lint": "node scripts/lint.js",
+    "secret-scan": "node scripts/secret-scan.js",
+    "check": "npm test && npm run lint && npm run secret-scan"
+  }
+}

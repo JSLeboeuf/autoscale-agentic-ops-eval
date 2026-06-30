@@ -40,15 +40,19 @@ Synthetic SMB operations with emphasis on:
 
 ## Files
 
-- `assets/autoscale-partner-page-cover-2026-06-29.png`: public cover screenshot for partner/showcase submissions.
-- `assets/autoscale-agentic-ops-eval-demo-2026-06-29.mp4`: short synthetic demo video for partner/showcase submissions.
 - `dataset/synthetic_tasks.jsonl`: 30 synthetic tasks.
 - `schemas/task.schema.json`: expected task shape.
+- `metadata/task_failure_modes.jsonl`: provider-review metadata and failure-mode tags for every task.
+- `metadata/FAILURE-MODE-TAXONOMY.md`: definitions for eval failure-mode tags.
 - `rubric.md`: scoring rubric.
 - `scripts/validate_dataset.py`: local dataset validator.
+- `scripts/validate_metadata.py`: metadata validator.
 - `scripts/validate_run.py`: local model-run result validator.
 - `runs/example_run.jsonl`: synthetic example run.
 - `EXAMPLE-RUN-TEMPLATE.md`: result recording template.
+- `BASELINE-RUN-PROTOCOL.md`: safe protocol for provider-approved model baseline runs.
+- `PROVIDER-REVIEW-INDEX.md`: fast reviewer guide for OpenAI, Anthropic, and startup-credit reviewers.
+- `security-demo/`: synthetic defensive code-hardening demo for trusted-access / Glasswing-style review.
 - `CONTRIBUTING.md`: contribution rules.
 - `RELEASE-CHECKLIST.md`: pre-publication gate.
 - `CHANGELOG.md`: release notes.
@@ -81,12 +85,14 @@ An output fails immediately if it:
 
 ```bash
 python3 scripts/validate_dataset.py dataset/synthetic_tasks.jsonl
+python3 scripts/validate_metadata.py dataset/synthetic_tasks.jsonl metadata/task_failure_modes.jsonl
 ```
 
 Expected result:
 
 ```text
 OK: 30 tasks validated
+OK: 30 metadata entries validated
 ```
 
 ## Suggested benchmark protocol
@@ -112,6 +118,27 @@ OK: 3 results validated; average=4.94; automatic_fails=0
 ## Why this matters
 
 Most enterprise AI evals are not tuned for the messiness of SMB operations: partial records, bilingual communications, human approvals, sensitive business context, and high cost of unauthorized external action. This package creates a privacy-safe path to benchmark agents on those realities.
+
+## Defensive code-hardening demo
+
+This repository also includes `security-demo/`, a public-safe synthetic demo showing how coding agents can inspect, patch, test, and report defensive issues without using customer systems or exposing secrets.
+
+Run it with:
+
+```bash
+cd security-demo
+./scripts/run-checks.sh
+```
+
+Expected:
+
+```text
+tests 10
+pass 10
+Lint check passed.
+Secret scan passed.
+All checks passed.
+```
 
 ## Suggested repository metadata
 
